@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alpha Trader — Trade Smart</title>
+    <!-- Meta Share -->
+    <meta property="og:title" content="Alpha Trader — Trade Smart" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{% static 'images/screen.jpg' %}" />
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:300,400,700" rel="stylesheet">
+    <!-- build:css css/app.min.css -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/global/bootstrap.min.css' %}">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{% static 'css/global/plugins/icon-font.css' %}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- /build -->
+</head>
+
+<body class="overflow-hidden">
+    <header id="home">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="https://www.alphatrader.in/">
+                    <h3 class="gradient-mask">Alpha Trader</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <ul class="navbar-nav text-sm-left ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.alphatrader.in/#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.alphatrader.in/#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.alphatrader.in/blog.html">Blog</a>
+                        </li>
+                        <!--                         <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown">Pages <span class="pe-2x pe-7s-angle-down"></span>  </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index-two.html">Landing Style Two</a>
+                                <a class="dropdown-item" href="blog.html">Blog Page</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                            </div>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="https://www.alphatrader.in/login/" class="btn align-middle btn-outline-primary my-2 my-lg-0">Login</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="https://www.alphatrader.in/register/" class="btn align-middle btn-primary my-2 my-lg-0">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- // end navbar -->
+    </header>
+    {% block content %} {% endblock %}
+    <div class="section bg-light mt-4" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"> <img src="/static/images/global/logo-dark.svg" class="logo-dark" alt="Start.ly Logo">
+                    <p class="mt-3 ml-1 text-muted">Alpha trader is your friendly neighbourhood automation tool </p>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-links ml-1">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-links ml-1">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#about">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-links ml-1">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#home" class="btn btn-sm btn-outline-primary ml-1">Go to Top</a>
+                </div>
+            </div>
+            <div class=" text-center mt-4"> <small class="text-muted">Copyright ©
+2018
+All rights reserved. Alpha Trader
+</small></div>
+        </div>
+    </div>

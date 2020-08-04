@@ -1,0 +1,41 @@
+{% extends "accounts/base.html" %} 
+{% block content %}
+
+
+<div class="section" id="signup">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h3>Start your free trial</h3>
+            <p>Signup now. Its free and takes less than 3 minutes</p>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-5">
+                <form method="post">
+                	{% csrf_token %}
+                    {% for field in form %}
+                    <div class="form-group">
+                        {{ field }} 
+                        {% if field.help_text %}
+                          <small style="color: grey">{{ field.help_text }}</small>
+                        {% endif %}
+                        {% for error in field.errors %}
+                          <p style="color: red">{{ error }}</p>
+                        {% endfor %}                                           
+                    </div>                    
+                    {% endfor %}
+                <button class="btn btn-xl btn-block btn-primary" type="submit">Sign up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form >
+    <label for="username"></label>
+    <input type="text" name="username" id="username">
+    <label for="password"></label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="Login">
+</form> -->
+{% endblock %}

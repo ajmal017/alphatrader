@@ -1,0 +1,518 @@
+<!-- //Header
+	//Logo floated to left
+	// The rest of the elements are in a container floatedright
+
+//Sidebar Nav - positioned absolute and fixed - use li for each singular element
+
+//Page content 
+	// 1. For Channels ->
+		// ONe row + two columns [ messsage box + sidebar area
+			//1. Message box
+				Fixed text area on bottom for messaging
+					+ and textarea floated to left, Send button + settings floated to right
+				Channel show button positioned absolute to the parent container
+					Each message will be one full width element
+						The img will be floated to the left as well as the message -->
+{% extends "dashboard/basealpha.html" %}
+{% load static %}
+{% load app_filters %}
+
+        {% block content %}
+        <body>
+            {% include "dashboard/inc/headeralpha.html" with active_tab='channels' %}
+	        <main class="page-inner">
+	            <div class="row">
+                        <div class="col-lg-9 col-md-9 ch_message_box_parent">
+                        	<div class="ch_message_box">
+                                    {% if chnl is True %}
+                                   
+                        		<div class="channel_meta">
+                                          <div class="title_area">
+                                                <h3>#{{chname}}</h3>
+                                                <ul class="tags_badges">
+                                                      <li class="tag">TRADE ANALYST</li>
+                                                      <li class="profit_percent"><i class="fa fa-arrow-up"></i> 2%</li>
+
+                                                      <li class="atbadge"><i class="fa fa-trophy"></i></li>                                                   
+                                                </ul>                                                
+                                          </div>
+                      				<ul class="channel_cpanel">
+                        				<li><a href=""><i class="fa fa-star"></i></a></li>
+                                                <li><a href=""><i class="fa fa-user"></i> 2.8k</a></li>
+
+                        				<li><a href=""><i class="fa fa-microchip"></i></a></li>
+                                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+<!--                         				<li><a href="#" class="sponsor_btn"><button>+ SPONSOR</button></a></li>
+ -->
+                        			</ul>
+						</div>	                        		
+                        		<div id="channel-{{chname}}" class="message_area">
+                                          <div class="new_msgs_notification"><p>You have 3 new messages from May 3 2018</p><span class="close_noti_btn"><a href="">X</a></span></div>
+
+                                          {% for msg in latest_msgs %}
+                                                <div class="message simple {% if msg.user.username == username %}self{% endif %}">
+                                                      <div class="user_icon">
+                                                            <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                            <p class="message_points">+35</p>
+                                                      </div>
+                                                      <div class="msg_main">
+                                                            <ul class="meta">
+                                                                  <li class="username">@{{msg.user.username}}</li>
+                                                                  <li class="message_posted">{{msg.posted_at | parse_time }}</li>
+
+                                                            </ul>
+                                                            <p class="message_content">{{msg.text}}</p>
+                                                            <div class="alpha_social_bar">
+                                                                  <ul>
+                                                                        <li class="community_btn upvote"><a href="#"><i class="fa fa-arrow-up" ></i></a></li>
+                                                                        <li class="community_btn downvote"><a href="#"><i class="fa fa-arrow-down"></i></a></li>
+                                                                        <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                        <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                        <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                                  </ul>
+                                                            </div>                                                            
+                                                      </div>
+                                                </div>                                                
+                                          {% endfor %}
+
+                                          <div class="message telegram {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon"><img src="{% static 'dashboard/images/avatar1.png' %}"></div>
+                                                <div class="msg_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+
+                                                            <li class="message_title">TELEGRAM</li>                                                    
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <p class="message_content">Some message from the telegram channel is shown here</p>
+                                                </div>
+                                          </div>           
+                                          <div class="message {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon"><img src="{% static 'dashboard/images/avatar1.png' %}"></div>
+                                                <div class="msg_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="quoted_msg telegram">
+                                                            <div class="msg_main">
+                                                                  <ul class="meta">
+                                                                        <li class="username" >@vsananthu</li>
+                                                                        <li class="message_title">TELEGRAM</li>
+                                                                        <li class="message_posted">03:04 pm</li>
+                                                                  </ul>
+                                                                  <p class="message_content">Some message from the telegram channel is shown here</p>
+                                                            </div>                                                          
+                                                      </div>
+                                                      <p class="message_content">A message quoting some other message is shown</p>
+                                                </div>
+                                          </div> 
+                                          <div class="message recommendation buy {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon">
+                                                      <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                      <p class="message_points">+35</p>
+                                                </div>
+                                                <div class="recom_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">TRADE</li> 
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="recom">
+                                                            <div class="recom_content">
+                                                                  <ul>
+                                                                        <li class="recom_meta upvote">STOCK : AAPL</li>
+                                                                        <li class="recom_meta upvote">ORDER : MKT</li>
+                                                                        <li class="recom_meta upvote">DURATION : INTRADAY</li>
+                                                                        <li class="recom_meta upvote">UPSIDE : 3%</li>
+                                                                  </ul>
+                                                            </div>
+                                                            <div class="recom_side green">
+<!--                                                                   <div class="recom_icon"><i class="fa fa-star"></i></div>
+ -->                                                                  <div class="recom_order_type">BUY</div>                                                               
+                                                            </div>                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-angle-double-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-angle-double-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                     
+
+                                                </div>
+                                             
+                                          </div>  
+                                          <div class="message recommendation sell {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon">
+                                                      <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                      <p class="message_points">+35</p>
+                                                </div>
+                                                <div class="recom_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">TRADE</li> 
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="recom">
+                                                            <div class="recom_content">
+                                                                  <ul>
+                                                                        <li class="recom_meta upvote">STOCK : AAPL</li>
+                                                                        <li class="recom_meta upvote">ORDER : MKT</li>
+                                                                        <li class="recom_meta upvote">DURATION : INTRADAY</li>
+                                                                        <li class="recom_meta upvote">UPSIDE : 3%</li>
+                                                                  </ul>
+                                                            </div>
+                                                            <div class="recom_side red">
+<!--                                                                   <div class="recom_icon"><i class="fa fa-star"></i></div>
+ -->                                                                  <div class="recom_order_type">SELL</div>                                                               
+                                                            </div>                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-angle-double-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-angle-double-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                    
+
+                                                </div>
+                                              
+                                          </div>
+                                          <div class="message recommendation buy complete {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon"><img src="{% static 'dashboard/images/avatar1.png' %}"></div>
+                                                <div class="recom_main profit">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">TRADE</li>                                                    
+                                                            <li class="trade_result"><i class="fas fa-check-circle"></i> </li>
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="recom">
+                                                            <div class="recom_content">
+                                                                  <ul>
+                                                                        <li class="recom_meta upvote">STOCK : AAPL</li>
+                                                                        <li class="recom_meta upvote">ORDER : MKT</li>
+                                                                        <li class="recom_meta upvote">DURATION : INTRADAY</li>
+                                                                        <li class="recom_meta upvote">UPSIDE : 3%</li>
+                                                                        <li class="recom_meta upvote">STOPLOSS : 2%</li>
+
+                                                                  </ul>
+                                                            </div>
+                                                            <div class="recom_side green">
+<!--                                                                   <div class="recom_icon"><i class="fa fa-star"></i></div>
+ -->                                                                  <div class="recom_order_type">BUY</div>                                                               
+                                                            </div>                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-angle-double-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-angle-double-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                     
+
+                                                </div>
+                                             
+                                          </div>  
+                                          <div class="message recommendation sell complete {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon"><img src="{% static 'dashboard/images/avatar1.png' %}"></div>
+                                                <div class="recom_main loss">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">TRADE</li>                                                    
+                                                            <li class="trade_result"><i class="fas fa-times-circle"></i> </li>
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="recom">
+                                                            <div class="recom_content">
+                                                                  <ul>
+                                                                        <li class="recom_meta upvote">STOCK : AAPL</li>
+                                                                        <li class="recom_meta upvote">ORDER : MKT</li>
+                                                                        <li class="recom_meta upvote">DURATION : INTRADAY</li>
+                                                                        <li class="recom_meta upvote">UPSIDE : 3%</li>
+                                                                  </ul>
+                                                            </div>
+                                                            <div class="recom_side red">
+<!--                                                                   <div class="recom_icon"><i class="fa fa-star"></i></div>
+ -->                                                                  <div class="recom_order_type">SELL</div>                                                               
+                                                            </div>                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-angle-double-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-angle-double-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                    
+
+                                                </div>
+                                              
+                                          </div>                                        
+                                          <div class="message news neutral {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon">
+                                                      <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                      <p class="message_points">+35</p>
+
+                                                </div>
+                                                <div class="news_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">NEWS</li>                                                    
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="news_cparent">
+                                                            <div class="news_image">
+                                                            </div>                                                            
+                                                            <div class="news_content">
+                                                                  <h2>Some title for the news</h2>
+                                                                  <h3>Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                  consequat. Duis aute irure dolor in reprehenderit .....</h3>
+
+                                                            </div>
+                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-arrow-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-arrow-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                    
+
+                                                </div>
+                                              
+                                          </div>                                           
+                                          <div class="message news buy {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon">
+                                                      <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                      <p class="message_points">+35</p>
+                                                </div>
+                                                <div class="news_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">NEWS</li>                                                    
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="news_cparent">
+                                                            <div class="news_image">
+                                                            </div>                                                            
+                                                            <div class="news_content">
+                                                                  <h2>Some title for the news</h2>
+                                                                  <h3>Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                  consequat. Duis aute irure dolor in reprehenderit .....</h3>
+
+                                                            </div>
+                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-arrow-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-arrow-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                    
+
+                                                </div>
+                                              
+                                          </div>
+                                          <div class="message news sell {% if msg.user.username == username %}self{% endif %}">
+                                                <div class="user_icon">
+                                                      <img src="{% static 'dashboard/images/avatar1.png' %}">
+                                                      <p class="message_points">+35</p>
+                                                </div>
+                                                <div class="news_main">
+                                                      <ul class="meta">
+                                                            <li class="username" >@vsananthu</li>
+                                                            <li class="message_title">NEWS</li>                                                    
+                                                            <li class="message_posted">03:04 pm</li>
+                                                      </ul>
+                                                      <div class="news_cparent">
+                                                            <div class="news_image">
+                                                            </div>                                                            
+                                                            <div class="news_content">
+                                                                  <h2>Some title for the news</h2>
+                                                                  <h3>Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                                  consequat. Duis aute irure dolor in reprehenderit .....</h3>
+
+                                                            </div>
+                                                           
+                                                      </div>
+                                                      <div class="alpha_social_bar">
+                                                            <ul>
+                                                                  <li class="community_btn upvote"><a href="#"><i class="fa fa-arrow-up" ></i></a></li>
+                                                                  <li class="community_btn downvote"><a href="#"><i class="fa fa-arrow-down"></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-reply"></i></a></li>
+                                                                  <li class="community_btn quote"><a href="#"><i class="fa fa-bookmark" ></i></a></li>
+                                                                  <li class="community_btn reply"><a href="#"><i class="fa fa-ban" ></i></a></li>
+                                                            </ul>
+                                                      </div>                                                    
+
+                                                </div>
+                                              
+                                          </div>
+                                          <div class="channel_activity">
+                                                <p>@kris is typing ....</p>   
+                                                <ul>
+                                                      <li class="all"><a href=""><i class="fa fa-bars" ></i></a> </li>
+                                                      <li class="messages"><a href=""><i class="fa fa-envelope" ></i></a> </li>
+                                                      <li class="trades"><a href=""><i class="fa fa-chart-line" ></i></a> </li>
+                                                      <li class="news"><a href=""><i class="fa fa-newspaper" ></i></a> </li>
+                                                      <li class="telegram"><a href=""><i class="fa fa-paper-plane" ></i></a> </li>
+
+                                                </ul>   
+
+                                          </div>                                                
+                        		</div>
+                        		<div class="channels_parent">
+                        			<a class="channels_btn" href=""><img src="{% static 'dashboard/images/ch_btn.png' %}"></a>
+			                        <ul class="channel_list dropdown-menu dropdown-list" role="menu">
+                                          {% for chanl in subsc_chnls %}
+
+			                            <li class="channel_item"><a href="{{chnl.link}}"><i class="fa fa-hashtag"></i>{{chanl.name}}</a></li>
+
+                                          {% endfor %}
+
+			                        </ul>   
+
+                        		</div> 
+                                                       		
+                        		<div class="message_tools">
+                        			<ul>
+                                                {% if subscribed is False %}
+
+                                                <li class="join_btn"><button>JOIN <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></button></li>
+
+                                                {% else %}
+
+                        				<li class="plus_btn">
+                        					<a href="#">+</a>
+                        					<ul class="message_menu dropdown-menu" role="menu">
+					                            <li class="mmenu_item add_trade">
+					                            	<a href="#"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>Add Trade</a>
+					                            	<div class="add_trade_box arrow_box">
+					                            		<div class="at_stock clear">
+					                            			<select class="left">
+																<option value="buy">Buy</option>
+																<option value="sell">Sell</option>
+					                            			</select>
+
+					                            			<input class="left" type="text" name="stockname">
+					                            		</div>
+
+					                            		<div class="at_type clear">
+					                            			<select class="left">
+																<option value="mkt">Market</option>
+																<option value="limit">Limit</option>
+					                            			</select>
+					                            			<input class="left" type="text" name="limit_price">
+					                            		</div>
+					                            		<div class="at_exchange clear ">
+					                            			<label class="left">Exchange</label>
+					                            			<select  class="left">
+																<option value="nse">NSE</option>
+																<option value="bse">BSE</option>
+																<option value="mcx">MCX</option>
+																<option value="cdx">CDX</option>
+					                            			</select>
+					                            		</div>					                            		
+					                            		<button class="submit_trade">SUBMIT</button>
+					                            	</div>
+
+					                          	</li>
+					                            <li class="mmenu_item"><a href="#"><i class="fa fa-cloud-upload-alt fa-lg" aria-hidden="true"></i>Upload</a></li>
+					                        </ul>        
+                        				</li>
+                        				<li class="message_text">
+                        					<textarea placeholder="Type a message..." autofocus></textarea>
+                        				</li>
+
+                                                <li class="settings_btn right"><a href=""><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></a></li>
+                        				<li class="settings_btn right"><a href=""><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a></li>
+                        				<li class="send_btn"><button>SEND <i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i></button></li>
+                                                {% endif %}
+
+                        			</ul>
+                        		</div>
+                                    {% else %}
+                                          {% include "dashboard/inc/channel404.html" %}
+                                    {% endif %}
+
+
+                        	</div>                        	
+                        </div>
+                        <div class="col-lg-3 col-md-3 ch_sidebar_parent _sidebar_resize ">
+                        	<div class="ch_sidebar">
+                        		<div class="sidebar_menu">
+                        			<a class="enlarge_sidebar" href=""><i class="fa fa-angle-double-left"></i></a>                      			
+                        		</div>                          	 
+                        		<div class="at_chart">
+									<!-- TradingView Widget BEGIN -->
+									<div class="tradingview-widget-container">
+									  <div id="tradingview_aa0f8"></div>
+									  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NSE-RELIANCE/" rel="noopener" target="_blank"><span class="blue-text">RELIANCE chart</span></a> by TradingView</div>
+									  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+									  <script type="text/javascript">
+									  new TradingView.widget(
+									  {
+									  "autosize": true,
+									  "symbol": "NSE:RELIANCE",
+									  "interval": "1",
+									  "timezone": "Etc/UTC",
+									  "theme": "Light",
+									  "style": "1",
+									  "locale": "in",
+									  "toolbar_bg": "#f1f3f6",
+									  "enable_publishing": false,
+									  "container_id": "tradingview_aa0f8"
+									}
+									  );
+									  </script>
+									</div>
+									<!-- TradingView Widget END -->  			
+
+                        		</div>
+                     		
+                        	</div>
+                        </div>	            	
+	            </div>
+	        </main>
+	        <script src="{% static 'dashboard/plugins/jquery/jquery-2.1.4.min.js' %}"></script>
+	        <script src="{% static 'dashboard/plugins/jquery-ui/jquery-ui.min.js' %}"></script>
+	        <script src="{% static 'dashboard/plugins/jquery-blockui/jquery.blockui.js' %}"></script>
+	        <script src="{% static 'dashboard/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+	        <script src="{% static 'dashboard/plugins/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+
+	        <script src="{% static 'dashboard/plugins/waves/waves.min.js' %}"></script>
+
+	        <script src="{% static 'dashboard/plugins/toastr/toastr.min.js' %}"></script>
+            <script type="text/javascript"> 
+               var atlocalised = {
+                        "username":"{{username}}",
+                        "chname":"{{chname}}",
+                  };
+            </script>
+
+              <script src="{% static 'dashboard/js/rewebsocket.js' %}"></script>
+
+	        <script src="{% static 'dashboard/js/pages/channels.js' %}"></script> 	        
+        </body>
+        {% endblock %}

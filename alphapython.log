@@ -1,0 +1,2834 @@
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /favicon.ico
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "./dashboard/views.py", line 33, in dispatch
+    return super(ProfileView, self).dispatch(request, *args, **kwargs)
+TypeError: super(type, obj): obj must be an instance or subtype of type
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "./dashboard/views.py", line 33, in dispatch
+    return super(ChannelView, self).dispatch(request, *args, **kwargs)
+TypeError: super(type, obj): obj must be an instance or subtype of type
+WARNING Not Found: /dashboard/channels/inbox.html
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /favicon.ico
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: dashboard/inc/footeralpha.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: dashboard/inc/footeralpha.html
+WARNING Not Found: /favicon.ico
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Using busy-loop synchronous mode on channel layer
+INFO Listening on endpoint tcp:port=8000:interface=127.0.0.1
+ERROR Error trying to receive messages: Error 111 connecting to localhost:6379. Connection refused.
+ERROR Error trying to receive messages: Error 111 connecting to localhost:6379. Connection refused.
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Using busy-loop synchronous mode on channel layer
+INFO Listening on endpoint tcp:port=8000:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Using busy-loop synchronous mode on channel layer
+INFO Listening on endpoint tcp:port=8000:interface=127.0.0.1
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 191, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/connections.py", line 920, in connect
+    **kwargs)
+  File "/usr/lib/python3.5/socket.py", line 693, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.5/socket.py", line 732, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 236, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/connections.py", line 699, in __init__
+    self.connect()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/connections.py", line 967, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'alphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com' ([Errno -3] Temporary failure in name resolution)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "./dashboard/views.py", line 31, in dispatch
+    if not request.user.is_authenticated:
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 215, in inner
+    self._setup()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 349, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 211, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 196, in _get_session
+    self._session_cache = self.load()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 34, in load
+    expire_date__gt=timezone.now()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 459, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 391, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/where.py", line 80, in as_sql
+    sql, params = compiler.compile(child)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 391, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/lookups.py", line 160, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/lookups.py", line 153, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 648, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 133, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/mysql/features.py", line 65, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 345, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 576, in temporary_connection
+    cursor = self.cursor()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 236, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/connections.py", line 699, in __init__
+    self.connect()
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/pymysql/connections.py", line 967, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'alphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com' ([Errno -3] Temporary failure in name resolution)")
+WARNING Not Found: /verify/
+DEBUG Using selector: EpollSelector
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+DEBUG Using selector: EpollSelector
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 42298] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 42298]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 42298] open and established
+DEBUG WebSocket ['127.0.0.1', 42298] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 42352] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 42352] open and established
+DEBUG WebSocket ['127.0.0.1', 42352] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 42352]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 42298]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 42352]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 42298] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 42352]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 42352]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+DEBUG WebSocket closed for ['127.0.0.1', 42352]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 52530] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 52530]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 52530] open and established
+DEBUG WebSocket ['127.0.0.1', 52530] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 52586] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 52586] open and established
+DEBUG WebSocket ['127.0.0.1', 52586] accepted by application
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 52530] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 52586]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 52586]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+WARNING Not Found: /dashboard/channels/dashboard/images/avatar1.png
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 52586]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 52920] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 52920]
+DEBUG Upgraded connection ['127.0.0.1', 52998] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 52998]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG Upgraded connection ['127.0.0.1', 53034] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53034]
+DEBUG Upgraded connection ['127.0.0.1', 53074] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53074]
+DEBUG Upgraded connection ['127.0.0.1', 53130] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53130]
+DEBUG Upgraded connection ['127.0.0.1', 53186] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53186]
+DEBUG Upgraded connection ['127.0.0.1', 53266] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53266]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 53366] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 53366]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG Upgraded connection ['127.0.0.1', 53406] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 53406]
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG Upgraded connection ['127.0.0.1', 53442] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53442]
+DEBUG Upgraded connection ['127.0.0.1', 53490] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53490]
+DEBUG HTTP b'GET' request for ['127.0.0.1', 53520]
+WARNING Not Found: /chat/room1/
+DEBUG HTTP 404 response started for ['127.0.0.1', 53520]
+DEBUG HTTP close for ['127.0.0.1', 53520]
+DEBUG HTTP response complete for ['127.0.0.1', 53520]
+DEBUG Upgraded connection ['127.0.0.1', 53540] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53540]
+DEBUG Upgraded connection ['127.0.0.1', 53598] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53598]
+DEBUG Upgraded connection ['127.0.0.1', 53678] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.room_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53678]
+DEBUG Upgraded connection ['127.0.0.1', 53786] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 9, in connect
+    self.channel_group_name = 'chat_%s' % self.channel_name
+  'ChatConsumer' object has no attribute 'room_name'
+DEBUG WebSocket closed for ['127.0.0.1', 53786]
+INFO Killed 0 pending application instances
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 53956] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 53956] open and established
+DEBUG WebSocket ['127.0.0.1', 53956] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 53956]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 54050] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 54050] open and established
+DEBUG WebSocket ['127.0.0.1', 54050] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 54050]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 55220] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55220] open and established
+DEBUG WebSocket ['127.0.0.1', 55220] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 55220]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 55220]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 55904] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55904] open and established
+DEBUG WebSocket ['127.0.0.1', 55904] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 55904]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 55990] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 55990]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55990] open and established
+DEBUG WebSocket ['127.0.0.1', 55990] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 56044] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 56044] open and established
+DEBUG WebSocket ['127.0.0.1', 56044] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 56044]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 55990] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG HTTP b'GET' request for ['127.0.0.1', 56342]
+WARNING Not Found: /chat/room1/
+DEBUG HTTP 404 response started for ['127.0.0.1', 56342]
+DEBUG HTTP close for ['127.0.0.1', 56342]
+DEBUG HTTP response complete for ['127.0.0.1', 56342]
+DEBUG WebSocket incoming frame on ['127.0.0.1', 56044]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 56044]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 57820] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 57820] open and established
+DEBUG WebSocket ['127.0.0.1', 57820] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 57820]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 57820]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 34528] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 34528]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34528] open and established
+DEBUG WebSocket ['127.0.0.1', 34528] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 34586] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34586] open and established
+DEBUG WebSocket ['127.0.0.1', 34586] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 34586]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 34528] path=b'/chat/room1/'> took too long to shut down and was killed.
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 34586]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+INFO Killed 0 pending application instances
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+INFO Killed 0 pending application instances
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 36968] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 36968]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 36968] open and established
+DEBUG WebSocket ['127.0.0.1', 36968] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 37022] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37022] open and established
+DEBUG WebSocket ['127.0.0.1', 37022] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 37022]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 36968]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37022]
+WARNING Not Found: /dashboard/channels/undefined
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 36968] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket closed for ['127.0.0.1', 37022]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 37504] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 37504]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37504] open and established
+DEBUG WebSocket ['127.0.0.1', 37504] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 37542] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37542] open and established
+DEBUG WebSocket ['127.0.0.1', 37542] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 37542]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37504]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37542]
+WARNING Not Found: /dashboard/channels/undefined
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 37504] path=b'/chat/room1/'> took too long to shut down and was killed.
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 37542]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 37834] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37834] open and established
+DEBUG WebSocket ['127.0.0.1', 37834] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 37834]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 37908] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 37908]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37908] open and established
+DEBUG WebSocket ['127.0.0.1', 37908] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 37962] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37962] open and established
+DEBUG WebSocket ['127.0.0.1', 37962] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 37962]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37908]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37962]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 37908] path=b'/chat/room1/'> took too long to shut down and was killed.
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 37962]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 59594] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 59594] open and established
+DEBUG WebSocket ['127.0.0.1', 59594] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 59594]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 59726] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 59726]
+ERROR [Failure instance: Traceback: <class 'KeyError'>: <WebSocketProtocol client=['127.0.0.1', 59726] path=b'/chat/room1/'>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:459:callback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1386:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:191:create_application
+]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 59772] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 59772] open and established
+DEBUG WebSocket ['127.0.0.1', 59772] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 59772]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_id'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "./chat/consumers.py", line 48, in chat_message
+    'channel_id': self.room_id,
+  'ChatConsumer' object has no attribute 'room_id'
+DEBUG WebSocket closed for ['127.0.0.1', 59772]
+DEBUG Upgraded connection ['127.0.0.1', 59862] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 59862] open and established
+DEBUG WebSocket ['127.0.0.1', 59862] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 59862]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'room_id'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "./chat/consumers.py", line 48, in chat_message
+    'channel_id': self.room_id,
+  'ChatConsumer' object has no attribute 'room_id'
+DEBUG WebSocket closed for ['127.0.0.1', 59862]
+DEBUG Upgraded connection ['127.0.0.1', 59998] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 59998] open and established
+DEBUG WebSocket ['127.0.0.1', 59998] accepted by application
+INFO Killed 1 pending application instances
+DEBUG WebSocket closed for ['127.0.0.1', 59998]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 60314] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 60314] open and established
+DEBUG WebSocket ['127.0.0.1', 60314] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 60314]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 60410] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 60410]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 60410] open and established
+DEBUG WebSocket ['127.0.0.1', 60410] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 60452] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 60452] open and established
+DEBUG WebSocket ['127.0.0.1', 60452] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 60452]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'user_id'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "./chat/consumers.py", line 50, in chat_message
+    'user_id': self.user_id,
+  'ChatConsumer' object has no attribute 'user_id'
+ERROR Exception inside application: 'ChatConsumer' object has no attribute 'user_id'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "./chat/consumers.py", line 50, in chat_message
+    'user_id': self.user_id,
+  'ChatConsumer' object has no attribute 'user_id'
+DEBUG WebSocket closed for ['127.0.0.1', 60452]
+DEBUG Upgraded connection ['127.0.0.1', 60526] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 60526] open and established
+DEBUG WebSocket ['127.0.0.1', 60526] accepted by application
+INFO Killed 1 pending application instances
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 60526]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 60826] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 60826] open and established
+DEBUG WebSocket ['127.0.0.1', 60826] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 60826]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 32776] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 32776]
+ERROR [Failure instance: Traceback: <class 'KeyError'>: <WebSocketProtocol client=['127.0.0.1', 32776] path=b'/chat/room1/'>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:459:callback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1386:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:191:create_application
+]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 32812] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 32812] open and established
+DEBUG WebSocket ['127.0.0.1', 32812] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 32812]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 32812]
+DEBUG WebSocket closed for ['127.0.0.1', 32812]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 33360] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 33360]
+ERROR [Failure instance: Traceback: <class 'KeyError'>: <WebSocketProtocol client=['127.0.0.1', 33360] path=b'/chat/room1/'>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:459:callback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1386:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:191:create_application
+]
+DEBUG Upgraded connection ['127.0.0.1', 33394] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 33394] open and established
+DEBUG WebSocket ['127.0.0.1', 33394] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 33394]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 33394]
+DEBUG WebSocket closed for ['127.0.0.1', 33394]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 33952] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 33952]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=274847.001433528 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 34004] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 34004]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=274853.002155045 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 34116] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 34116]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34116] open and established
+DEBUG WebSocket ['127.0.0.1', 34116] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 34194] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 34194]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34194] open and established
+DEBUG WebSocket ['127.0.0.1', 34194] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 34256] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34256] open and established
+DEBUG WebSocket ['127.0.0.1', 34256] accepted by application
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 34116] path=b'/chat/room1/'> took too long to shut down and was killed.
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 34194] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 34256]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 34256]
+DEBUG WebSocket closed for ['127.0.0.1', 34256]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 34420] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 34420]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34420] open and established
+DEBUG WebSocket ['127.0.0.1', 34420] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 34450] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 34450] open and established
+DEBUG WebSocket ['127.0.0.1', 34450] accepted by application
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 34420] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 34450]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 34450]
+DEBUG WebSocket closed for ['127.0.0.1', 34450]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 37696] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 37696]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37696] open and established
+DEBUG WebSocket ['127.0.0.1', 37696] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 37754] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 37754] open and established
+DEBUG WebSocket ['127.0.0.1', 37754] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 37754]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37696]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 37754]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 37696] path=b'/chat/room1/'> took too long to shut down and was killed.
+INFO Killed 1 pending application instances
+DEBUG WebSocket closed for ['127.0.0.1', 37754]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 37944] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: name 'user' is not defined
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = user.name
+  name 'user' is not defined
+DEBUG WebSocket closed for ['127.0.0.1', 37944]
+DEBUG Upgraded connection ['127.0.0.1', 38000] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: name 'user' is not defined
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = user.name
+  name 'user' is not defined
+DEBUG WebSocket closed for ['127.0.0.1', 38000]
+DEBUG Upgraded connection ['127.0.0.1', 38068] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: name 'user' is not defined
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = user.name
+  name 'user' is not defined
+DEBUG WebSocket closed for ['127.0.0.1', 38068]
+DEBUG Upgraded connection ['127.0.0.1', 38148] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: name 'user' is not defined
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = user.name
+  name 'user' is not defined
+DEBUG WebSocket closed for ['127.0.0.1', 38148]
+DEBUG Upgraded connection ['127.0.0.1', 38252] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: name 'user' is not defined
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  name 'user' is not defined
+DEBUG WebSocket closed for ['127.0.0.1', 38252]
+INFO Killed 0 pending application instances
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 38380] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38380]
+DEBUG Upgraded connection ['127.0.0.1', 38482] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 38482]
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG Upgraded connection ['127.0.0.1', 38550] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38550]
+DEBUG Upgraded connection ['127.0.0.1', 38598] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38598]
+DEBUG Upgraded connection ['127.0.0.1', 38638] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38638]
+DEBUG Upgraded connection ['127.0.0.1', 38700] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38700]
+DEBUG Upgraded connection ['127.0.0.1', 38784] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38784]
+DEBUG Upgraded connection ['127.0.0.1', 38918] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.name
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 38918]
+DEBUG Upgraded connection ['127.0.0.1', 39046] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.username
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 39046]
+DEBUG Upgraded connection ['127.0.0.1', 39244] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.username
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 39244]
+DEBUG Upgraded connection ['127.0.0.1', 39526] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR Exception inside application: 'User' object has no attribute 'name'
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 54, in __call__
+    await await_many_dispatch([receive, self.channel_receive], self.dispatch)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 110, in __call__
+    return await asyncio.wait_for(future, timeout=None)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 373, in wait_for
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py", line 125, in thread_handler
+    return self.func(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py", line 99, in dispatch
+    handler(message)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/generic/websocket.py", line 32, in websocket_connect
+    self.connect()
+  File "./chat/consumers.py", line 12, in connect
+    self.user_name = self.user.username
+  'User' object has no attribute 'name'
+DEBUG WebSocket closed for ['127.0.0.1', 39526]
+INFO Killed 0 pending application instances
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 39844] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 39844]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 39844] open and established
+DEBUG WebSocket ['127.0.0.1', 39844] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 39902] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 39902] open and established
+DEBUG WebSocket ['127.0.0.1', 39902] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 39902]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 39844]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 39902]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 39844] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket closed for ['127.0.0.1', 39902]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 49494] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 49494]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 49494] open and established
+DEBUG WebSocket ['127.0.0.1', 49494] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 49544] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 49544] open and established
+DEBUG WebSocket ['127.0.0.1', 49544] accepted by application
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 49494] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket closed for ['127.0.0.1', 49544]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 50890] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 50890] open and established
+DEBUG WebSocket ['127.0.0.1', 50890] accepted by application
+DEBUG Using selector: EpollSelector
+ERROR Internal Server Error: /dashboard/channels/
+Traceback (most recent call last):
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/urls/resolvers.py", line 494, in resolve
+    for pattern in self.url_patterns:
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/urls/resolvers.py", line 536, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/urls/resolvers.py", line 529, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/kris/Env/alpha3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./alpha3/urls.py", line 29, in <module>
+    url(r'^dashboard/', include('dashboard.urls')),
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/kris/Env/alpha3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dashboard/urls.py", line 3, in <module>
+    from . import views
+  File "./dashboard/views.py", line 30
+    def get(self, request, *args, **kwargs):
+                                           ^
+IndentationError: unindent does not match any outer indentation level
+DEBUG WebSocket closed for ['127.0.0.1', 50890]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 51600] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 51600]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 51600] open and established
+DEBUG WebSocket ['127.0.0.1', 51600] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 51664] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 51664] open and established
+DEBUG WebSocket ['127.0.0.1', 51664] accepted by application
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 51600] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 51664]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 51664]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 51664]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 52450] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 52450]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 52450] open and established
+DEBUG WebSocket ['127.0.0.1', 52450] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 52490] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 52490] open and established
+DEBUG WebSocket ['127.0.0.1', 52490] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 52490]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 52450]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 52490]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 52450] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket closed for ['127.0.0.1', 52490]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 54726] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 54726]
+ERROR [Failure instance: Traceback: <class 'KeyError'>: <WebSocketProtocol client=['127.0.0.1', 54726] path=b'/chat/room1/'>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:459:callback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1386:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:191:create_application
+]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 54776] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 54776] open and established
+DEBUG WebSocket ['127.0.0.1', 54776] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 54776]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 54776]
+DEBUG WebSocket closed for ['127.0.0.1', 54776]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Upgraded connection ['127.0.0.1', 55424] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 55424]
+ERROR [Failure instance: Traceback: <class 'KeyError'>: <WebSocketProtocol client=['127.0.0.1', 55424] path=b'/chat/room1/'>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:459:callback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1386:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:191:create_application
+]
+DEBUG Upgraded connection ['127.0.0.1', 55464] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55464] open and established
+DEBUG WebSocket ['127.0.0.1', 55464] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 55464]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 55464]
+INFO Killed 1 pending application instances
+DEBUG WebSocket closed for ['127.0.0.1', 55464]
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+DEBUG Upgraded connection ['127.0.0.1', 55728] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55728] open and established
+DEBUG WebSocket ['127.0.0.1', 55728] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 55728]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 55810] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 55810]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55810] open and established
+DEBUG WebSocket ['127.0.0.1', 55810] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 55852] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 55852] open and established
+DEBUG WebSocket ['127.0.0.1', 55852] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 55852]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 55810]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 55852]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 55810] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket closed for ['127.0.0.1', 55852]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG Upgraded connection ['127.0.0.1', 56138] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG WebSocket closed for ['127.0.0.1', 56138]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 56138] open and established
+DEBUG WebSocket ['127.0.0.1', 56138] accepted by application
+DEBUG Upgraded connection ['127.0.0.1', 56184] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 56184] open and established
+DEBUG WebSocket ['127.0.0.1', 56184] accepted by application
+DEBUG WebSocket incoming frame on ['127.0.0.1', 56184]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 56138]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 56184]
+WARNING Application instance <Task pending coro=<__call__() running at /home/kris/Env/alpha3/lib/python3.5/site-packages/channels/consumer.py:54> wait_for=<Future pending cb=[Task._wakeup()]>> for connection <WebSocketProtocol client=['127.0.0.1', 56138] path=b'/chat/room1/'> took too long to shut down and was killed.
+DEBUG WebSocket incoming frame on ['127.0.0.1', 56184]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Sent WebSocket packet to client for ['127.0.0.1', 56184]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket closed for ['127.0.0.1', 56184]
+DEBUG Upgraded connection ['127.0.0.1', 51894] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+DEBUG WebSocket closed for ['127.0.0.1', 51894]
+DEBUG Upgraded connection ['127.0.0.1', 51904] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 51904]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=284077.001490741 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 51916] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 51916]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=284084.002202303 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 51932] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 51932]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=284092.005157824 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 51952] to WebSocket
+DEBUG Using selector: EpollSelector
+ERROR [Failure instance: Traceback: <class 'django.db.utils.OperationalError'>: could not translate host name "psqlalphalive.cvb8cqc2yslc.us-west-2.rds.amazonaws.com" to address: Temporary failure in name resolution
+
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:500:errback
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:567:_startRunCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:653:_runCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1442:gotResult
+--- <exception caught here> ---
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/defer.py:1384:_inlineCallbacks
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/failure.py:422:throwExceptionIntoGenerator
+/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/server.py:186:create_application
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:250:inContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/threadpool.py:266:<lambda>
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:122:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/python/context.py:85:callWithContext
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/routing.py:56:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:40:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:138:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/sessions.py:161:__init__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:143:__call__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:64:__call__
+/usr/lib/python3.5/concurrent/futures/_base.py:398:result
+/usr/lib/python3.5/concurrent/futures/_base.py:357:__get_result
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:78:main_wrap
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:110:__call__
+/usr/lib/python3.5/asyncio/tasks.py:373:wait_for
+/usr/lib/python3.5/asyncio/futures.py:361:__iter__
+/usr/lib/python3.5/asyncio/tasks.py:296:_wakeup
+/usr/lib/python3.5/asyncio/futures.py:274:result
+/usr/lib/python3.5/concurrent/futures/thread.py:55:run
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/db.py:13:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/asgiref/sync.py:125:thread_handler
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:26:get_user
+/home/kris/Env/alpha3/lib/python3.5/site-packages/channels/auth.py:122:_get_user_session_key
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:55:__getitem__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py:196:_get_session
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py:34:load
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/manager.py:82:manager_method
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:397:get
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:254:__len__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:1179:_fetch_all
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/query.py:53:__iter__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/models/sql/compiler.py:1064:execute_sql
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:255:cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:232:_cursor
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/utils.py:89:__exit__
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:216:ensure_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/base/base.py:194:connect
+/home/kris/Env/alpha3/lib/python3.5/site-packages/django/db/backends/postgresql/base.py:168:get_new_connection
+/home/kris/Env/alpha3/lib/python3.5/site-packages/psycopg2/__init__.py:130:connect
+]
+DEBUG WebSocket closed for ['127.0.0.1', 51952]
+ERROR Exception in callback AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287
+handle: <TimerHandle when=284102.003124051 AsyncioSelectorReactor.callLater.<locals>.run() at /home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py:287>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/events.py", line 125, in _run
+    self._callback(*self._args)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/asyncioreactor.py", line 290, in run
+    f(*args, **kwargs)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/twisted/internet/tcp.py", line 289, in connectionLost
+    protocol.connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 128, in connectionLost
+    self._connectionLost(reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 2467, in _connectionLost
+    WebSocketProtocol._connectionLost(self, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/websocket/protocol.py", line 1096, in _connectionLost
+    self._onClose(self.wasClean, WebSocketProtocol.CLOSE_STATUS_CODE_ABNORMAL_CLOSE, "connection was closed uncleanly (%s)" % self.wasNotCleanReason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/autobahn/twisted/websocket.py", line 171, in _onClose
+    self.onClose(wasClean, code, reason)
+  File "/home/kris/Env/alpha3/lib/python3.5/site-packages/daphne/ws_protocol.py", line 146, in onClose
+    self.application_queue.put_nowait({
+AttributeError: 'WebSocketProtocol' object has no attribute 'application_queue'
+DEBUG Upgraded connection ['127.0.0.1', 51978] to WebSocket
+DEBUG Using selector: EpollSelector
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG WebSocket ['127.0.0.1', 51978] open and established
+DEBUG WebSocket ['127.0.0.1', 51978] accepted by application
+DEBUG WebSocket closed for ['127.0.0.1', 51978]
+DEBUG Creating tcp connection to ('127.0.0.1', 6379)
+DEBUG Cancelling waiter (<Future cancelled>, [None, None])
+DEBUG Waiter future is already done <Future cancelled>
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+INFO Listening on TCP address 127.0.0.1:8001
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+CRITICAL Listen failure: Couldn't listen on 127.0.0.1:8001: [Errno 98] Address already in use.
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+CRITICAL Listen failure: Couldn't listen on 127.0.0.1:8001: [Errno 98] Address already in use.
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+CRITICAL Listen failure: Couldn't listen on 127.0.0.1:8001: [Errno 98] Address already in use.
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+CRITICAL Listen failure: Couldn't listen on 127.0.0.1:8001: [Errno 98] Address already in use.
+INFO Starting server at tcp:port=8001:interface=127.0.0.1
+INFO HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO Configuring endpoint tcp:port=8001:interface=127.0.0.1
+CRITICAL Listen failure: Couldn't listen on 127.0.0.1:8001: [Errno 98] Address already in use.
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector
+DEBUG Using selector: EpollSelector

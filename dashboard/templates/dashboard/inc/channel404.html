@@ -1,0 +1,29 @@
+{% load static %}
+              		
+<div id="channel-{{chname}}" class="message_area">
+      <div class="channel404">
+            <h2>Oops! That channel does not exist.</h2>
+            <h3>Hurry and <a href="">create</a> it now.</h3>
+            <h3>You can also search for existing channels <a href="">here</a></h3>
+      </div>
+</div>
+<div class="channels_parent">
+	<a class="channels_btn" href=""><img src="{% static 'dashboard/images/ch_btn.png' %}"></a>
+      <ul class="channel_list dropdown-menu dropdown-list" role="menu">
+      {% for chanl in subsc_chnls %}
+
+          <li class="channel_item"><a href="{{chnl.link}}"><i class="fa fa-hashtag"></i>{{chanl.name}}</a></li>
+
+      {% endfor %}
+
+      </ul>   
+
+</div>                        		
+<div class="message_tools">
+	<ul>
+
+            <li class="join_btn"><button>CREATE <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></button></li>
+
+
+	</ul>
+</div>

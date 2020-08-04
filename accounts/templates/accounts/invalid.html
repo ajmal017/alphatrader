@@ -1,0 +1,42 @@
+{% extends "accounts/base.html" %} 
+{% block content %}
+
+
+<div class="section" id="signup">
+    <div class="container">
+		<p class="error">Sorry. Thats not valid</p>
+        <div class="section-title text-center">
+            <h3>Login</h3>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-5">
+                <form action="/accounts/auth/" method="post">
+                	{% csrf_token %}
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="UserName">
+                    </div>
+<!--                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div> -->
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                    	<input type="submit" class="btn btn-xl btn-block btn-primary" value="LOGIN">
+<!-- 
+                        <button type="submit" class="btn btn-xl btn-block btn-primary">GET STARTED FOR FREE</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form >
+    <label for="username"></label>
+    <input type="text" name="username" id="username">
+    <label for="password"></label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="Login">
+</form> -->
+{% endblock %}

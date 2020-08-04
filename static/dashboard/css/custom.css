@@ -1,0 +1,68 @@
+/* Write your custom CSS here */
+.navbar .logo-box{
+	background: #20d018;
+}
+
+.badge.badge-success {
+    background: #20d018;
+    font-weight: bold;
+
+}
+
+.text-success {
+    color: #20d018;
+}
+
+.progress-bar-success {
+    background-color: #20d018;
+}
+
+.menu.accordion-menu .disabled{
+	color: #546380;
+}
+
+.menu.accordion-menu .disabled:hover{
+	color: #546380;
+}
+
+.pace .pace-progress {
+    background: #20d018;
+}
+
+.pace .pace-progress-inner {
+    box-shadow: 0 0 10px #20d018, 0 0 5px #20d018;
+}
+
+.pace .pace-activity {
+    border-top-color: #20d018;
+    border-left-color: #20d018;
+    margin-top: 60px;
+}
+
+.panel-grey{
+    background: #f1f4f9;
+    box-shadow: none;
+}
+.messages-area {
+    background: #fff;
+    -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+}
+.channels-list{
+    background: #fff;
+}
+.channel-tools{
+    background: #fff;
+    border-left: 1px solid #eee;
+    list-style: none;
+
+}
+.channel-tools li{
+}
+@media (min-width: 768px){
+    .messages-area {
+        border-right: 1px solid #eee;
+
+    }   
+}
